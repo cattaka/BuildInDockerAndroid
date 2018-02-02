@@ -2,7 +2,7 @@ FROM ubuntu:xenial
 
 RUN apt-get update && \
   apt-get -y upgrade
-RUN apt-get -y install vi openjdk-8-jdk wget unzip git
+RUN apt-get -y install vim openjdk-8-jdk wget unzip git
 
 ENV ANDROID_HOME /opt/android-sdk
 RUN ANDROID_SDK_URL="https://dl.google.com/android/repository/sdk-tools-linux-3859397.zip" && \
